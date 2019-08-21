@@ -1,8 +1,3 @@
----
-title: "1-ab"
-output: html_document
----
-
 
 ### what is A/B testing?
 
