@@ -282,6 +282,34 @@ increase min detectable effect to 5% - sample size decreases
 
 - Higher sensitivity - increase number of pages
 
+---
+
+Analyze results
+
+N_cont = 10072 X_cont = 974
+N_exp = 9886   X_exp = 1242
+
+step 1: find p_pool =  (974 + 1242) / (10072 + 9886) = 0.111
+
+step 2: SE_pool = SQRT( 0.111 * (1- 0.111) ( (1/10072) + (1/9886))) = 0.00445
+
+d_hat = (X_exp / N_exp) - (X_cont / N_cont) = 0.0289
+
+m = z * SE = 1.96 * 0.00445 = 0.0087
+
+CI => d_hat +/- m = 0.0202 and 0.0376
+
+We conclude that that click through prob change by atleast 2%
+It holds for both significant and practical significance
+
+---
+
+- see 26th video
+- data could be uncertain so communicate to decision maker and take the risk
+
+
+
+
 
 
 
